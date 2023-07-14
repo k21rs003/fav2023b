@@ -1,7 +1,7 @@
 <?php
 
-include ('lib/Calendar.php');
-include ('lib/Input.php');
+include ('lib/calendar.php');
+include ('lib/input.php');
 
 if (isset($_POST['year']) && isset($_POST['month']) && isset($_POST['day'])) {
     $y = $_POST['year'];
@@ -17,11 +17,7 @@ if (isset($_POST['year']) && isset($_POST['month']) && isset($_POST['day'])) {
     echo "[空き状況確認]<br>";
 
     $f = isset($_POST['facility']) ? $_POST['facility'] : 0;
-    $facilities = [
-        1 => '会議室',
-        2 => '面接室A',
-        3 => '面接室B'
-    ];
+    
     $facilityName = ($f >= 1 && $f <= 3) ? $facilities[$f] : '-';
 
     $holidayWdays = [0, 6]; // 土日の配列
