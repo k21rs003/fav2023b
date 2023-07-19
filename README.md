@@ -15,7 +15,7 @@
   - `getWeekday($date)`は、年月日の日付を`$date`に格納すると、その日の曜日が出力される。
  
 ### 3.ファイルの説明
-- **query.html**は、検索したい値を入力し、出力である**check.php**へ送信するプログラム。
+- **query.html**は、検索したい値を入力し、出力である`check.php`へ送信するプログラム。
 - **check.php**は、**query.html**から受け取った値を画面上に出力するプログラム。  また、include式で`input.php`と`calendar.php`の指定されたファイルを読み込み、評価する。
 - **/lib/calendar.php**は、function()関数で構成された計算のみのプログラム。
 - **/lib/input.php**は、データのみのプログラム。
